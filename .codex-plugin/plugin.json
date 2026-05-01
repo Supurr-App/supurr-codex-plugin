@@ -7,7 +7,7 @@
     "url": "https://supurr.app"
   },
   "homepage": "https://supurr.app/agent",
-  "repository": "https://github.com/Supurr-App/Hyperliquid-Supurr-Skill",
+  "repository": "https://github.com/Supurr-App/supurr-codex-plugin",
   "keywords": [
     "supurr",
     "hyperliquid",
@@ -19,7 +19,7 @@
   "skills": "./skills/",
   "hooks": "./hooks/hooks.json",
   "interface": {
-    "displayName": "Supurr",
+    "displayName": "Supurr Apps / Supurr Codex Plugin",
     "shortDescription": "Create and manage Hyperliquid bots",
     "longDescription": "Use Supurr from Codex to create strategy configs, backtest, paper trade, deploy, monitor, and stop Hyperliquid bots. V1 uses the local Supurr CLI when it is installed and initialized.",
     "developerName": "Supurr",

@@ -1,4 +1,4 @@
-# Supurr Codex Plugin
+# Supurr Apps / Supurr Codex Plugin
 
 Repo-local Codex plugin for Supurr trading workflows on Hyperliquid.
 
@@ -37,23 +37,27 @@ Do not paste private keys into chat. Use `supurr init` locally.
 
 ## Plugin Install
 
-For local development, add this repo as a marketplace from the Codex plugin directory. If your Codex CLI build includes plugin marketplace commands:
+For local development, add this checkout as a marketplace from the Codex plugin directory. If your Codex CLI build includes plugin marketplace commands:
 
 ```bash
-codex plugin marketplace add /Users/amitsharma/Desktop/ai-agent
+codex plugin marketplace add /Users/amitsharma/Desktop/ai-agent/plugins/supurr
 ```
 
-For distribution, publish a Git repo containing:
+This GitHub repo uses plugin-at-root layout:
 
 ```text
 .agents/plugins/marketplace.json
-plugins/supurr/
+.codex-plugin/plugin.json
+skills/
+hooks/
+scripts/
+assets/
 ```
 
 Then install from Git:
 
 ```bash
-codex plugin marketplace add Supurr-App/<repo-name> --ref main
+codex plugin marketplace add Supurr-App/supurr-codex-plugin --ref main
 ```
 
 If the local CLI does not expose `codex plugin`, use the Codex app plugin directory and add the marketplace there.
@@ -62,7 +66,7 @@ If the local CLI does not expose `codex plugin`, use the Codex app plugin direct
 
 | Blocker | Owner |
 |---|---|
-| Public plugin repo name | Supurr |
+| Public plugin repo name | Done: `Supurr-App/supurr-codex-plugin` |
 | License decision | Supurr |
 | Real privacy policy URL | Supurr |
 | Real terms of service URL | Supurr |

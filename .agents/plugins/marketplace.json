@@ -1,0 +1,21 @@
+{
+  "name": "supurr",
+  "interface": {
+    "displayName": "Supurr Apps"
+  },
+  "plugins": [
+    {
+      "name": "supurr",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Supurr-App/supurr-codex-plugin.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

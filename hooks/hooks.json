@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "script=\"${SUPURR_CODEX_PLUGIN_HOOK:-}\"; if [ -z \"$script\" ]; then script=$(find \"$HOME/.codex/plugins/cache\" -path \"*/supurr/*/scripts/supurr-doctor-hook.py\" -type f -print -quit 2>/dev/null); fi; if [ -z \"$script\" ] && [ -f \"plugins/supurr/scripts/supurr-doctor-hook.py\" ]; then script=\"plugins/supurr/scripts/supurr-doctor-hook.py\"; fi; if [ -z \"$script\" ]; then printf '%s\n' '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"Supurr plugin hook could not find supurr-doctor-hook.py. Reinstall or refresh the Supurr plugin.\"}}'; exit 0; fi; python3 \"$script\"",
+            "command": "script=\"${SUPURR_CODEX_PLUGIN_HOOK:-}\"; if [ -z \"$script\" ]; then script=$(find \"$HOME/.codex/plugins/cache\" -path \"*/supurr/*/scripts/supurr-doctor-hook.py\" -type f -print -quit 2>/dev/null); fi; if [ -z \"$script\" ] && [ -f \"scripts/supurr-doctor-hook.py\" ]; then script=\"scripts/supurr-doctor-hook.py\"; fi; if [ -z \"$script\" ] && [ -f \"plugins/supurr/scripts/supurr-doctor-hook.py\" ]; then script=\"plugins/supurr/scripts/supurr-doctor-hook.py\"; fi; if [ -z \"$script\" ]; then printf '%s\n' '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"Supurr plugin hook could not find supurr-doctor-hook.py. Reinstall or refresh the Supurr plugin.\"}}'; exit 0; fi; python3 \"$script\"",
             "timeout": 20,
             "statusMessage": "Checking Supurr runtime"
           }
