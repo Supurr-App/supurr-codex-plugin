@@ -57,7 +57,7 @@ assets/
 Then install from Git:
 
 ```bash
-codex plugin marketplace add Supurr-App/supurr-codex-plugin --ref main
+codex plugin marketplace add https://github.com/Supurr-App/supurr-codex-plugin.git --ref main
 ```
 
 If the local CLI does not expose `codex plugin`, use the Codex app plugin directory and add the marketplace there.
