@@ -1,6 +1,6 @@
 # Supurr Apps / Supurr Codex Plugin
 
-Repo-local Codex plugin for Supurr trading workflows on Hyperliquid.
+Repo-local Codex plugin for Supurr trading workflows on Hyperliquid
 
 ## What It Does
 
